@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+ <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+ <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico" /> 
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+ <title>
+   Športni obrazec
+  </title>
+
+  
+   <script src="JS/javascript.js"></script>
+</head>
+
+
+<body onload="document.formA.mail1.focus()">
+  
+ <form name="theform" method="get" id="fullForm">
+
+  <div id="glavni">
+    <div class="gla2">
+	
+	</div>
+	<div id="a">
+	<p style="margin:0; float:left" id="p1">O</p>
+    <p style="margin:0" id="p2">BRAZEC ZA ZAPOSLITEV ŠPORTNIKA OZ. TRENERJA</p>
+	<p style="margin:0; float:left" id="p3">V DRŽAVNI UPRAVI</p>
+	<p style="margin:0; float:left" id="p4">RS</p>
+    </div>
+   <p style="margin:0" id="p5">Obrazec za zaposlitev (ustrezno izberi)</p>
+  
+ <div class="container">
+ <button id="btn1" class="btn btn2 btna" onclick="text(0)" required><h4 id="sport">ŠPORTNIKA</h4></button>
+ <button id="btn2" class="btn btn2 btnb" onclick="text(1)" required><h4 id="trener">TRENERJA</h4></button>
+ 
+ </div>
+  <p id="p6">OSEBNI PODATKI</p>
+
+  <div class="obrazec">
+
+ 
+    <div class="form frm">
+    <input type="text" autocomplete="off" maxlength="20" required/>
+    <label for="name" class="label-name">
+      <span class="content-name">
+        <i>Priimek:</i>
+      </span>
+    </label>
+    </div>
+
+   <div class="form frm1">
+        <input type="text" autocomplete="off" maxlength="20" required/>
+        <label for="name" class="label-name">
+          <span class="content-name">
+            <i>Ime:</i>
+          </span>
+        </label>
+        
+   </div>
+   <div class="radio-group">
+   <i>Spol:</i>
+      <input class="option-input opt1" type="radio" value="male" name="gender" :checked required/>
+      
+      <span><i>M</i></span>
+	  <label>
+    </label>
+
+    
+      <input class="option-input opt2" type="radio" value="female" name="gender" :checked required/>
+      
+      <span><i>Ž</i></span>
+	  <label>
+    </label>
+    
+
+  </div>
+
+  <div class="form1 frm2" id="toggle_color"><span><i>Datum rojstva:</i></span>
+    <input type="date" class="datum" name="datetime" id="my_date" required/>
+    <label for="date">
+      
+    </label>
+    
+</div>
+
+
+<div class="form frm3">
+  <input type="text" autocomplete="off" maxlength="40" required/>
+  <label for="name" class="label-name">
+    <span class="content-name">
+      <i>Država in kraj rojstva:</i>
+    </span>
+  </label>
+  
+</div>
+
+<div class="form frm4">
+  <input type="text" autocomplete="off" maxlength="25" required/>
+  <label for="name" class="label-name">
+    <span class="content-name">
+      <i>Državljanstvo:</i>
+    </span>
+  </label>
+  
+</div>
+      
+<div class="form frm5">
+  <input class="emso" type="text" autocomplete="off" onkeypress="return isNumber(event)" maxlength="13"required/>
+  <label for="name" class="label-name">
+    <img src="" id="img">
+    <span class="content-name">
+      <i>EMŠO:</i>
+    </span>
+  </label>
+  
+</div>
+
+<div class="form frm6">
+  <input class="davcna-st" type="text" autocomplete="off" onkeypress="return isNumber(event)" maxlength="8"required/>
+  <label for="name" class="label-name">
+    <span class="content-name">
+      <i>Davčna številka:</i>
+    </span>
+  </label>
+  
+</div>
+
+<div class="form frm7">
+  <input type="text" autocomplete="off" maxlength="45" required/>
+  <label for="name" class="label-name">
+    <span class="content-name">
+      <i>Stalno prebivališče(ulica, hišna številka, poštna številka in kraj):</i>
+    </span>
+  </label>
+  
+</div>
+	
+<div class="form frm8">
+  <input class="telefon" type="text" onkeypress="return isNumber(event)" maxlength="9" required/>
+  <label for="name" class="label-name">
+    <span class="content-name">
+      <i>Telefon:</i>
+    </span>
+  </label>
+  
+</div>
+
+<div class="form frm9">
+  <input class="telefon" type="text" onkeypress="return isNumber(event)" maxlength="9" required/>
+  <label for="name" class="label-name">
+    <span class="content-name">
+      <i>Mobilni telefon:</i>
+    </span>
+  </label>
+  
+</div>
+
+<div class="form frm10">
+  <input class="mail"type="email" maxlength="40" required/>
+  <label for="name" class="label-name">
+    <span class="content-name">
+      <i>Elektronska pošta:</i>
+    </span>
+  </label>
+  
+</div>
+
+</div>
+
+<br>
+<br>
+<br>
+
+<p id="p6a" class="obr">PODATKI O IZOBRAZBI</p>
+<div id="mycode" class="obrazec1">
+
+  <div class="form frm11">
+    
+    <label for="name" class="label-name" id="tmp2">
+      <span class="content-name">
+        
+        
+      </span>
+    </label><i class="tmp">Zaključena stopnja izobrazbe:
+          </i>
+    <select name="slt-1" id="slt-1" required>
+            <option>Izberi stopnjo izobrazbe(SOK)</option>
+          <option>1. Spričevalo o končanem 7. oz. 8. razredu OŠ</option>
+          <option>2. Zaključno spričevalo OŠ</option>
+          <option>3. Nižja poklicna izobrazba</option>
+          <option>4. Srednja pokllicna izobrazba</option>
+          <option>5. Spričevalo o poklicni, splošni maturi</option>
+          <option>6. Višja strokovna izobrazba</option>
+          <option>7. Visokošolska strokovna ali UN izobrazba</option>
+          <option>8. Magisterij</option>
+          <option>9. Magisterij znanosti/umetnosti</option>
+          <option>10. Doktorat znanosti</option>
+        </select>
+    </div>
+
+   <div class="form frm12">
+        <input type="text" autocomplete="off" maxlength="30"/>
+        <label for="name" class="label-name">
+          <span class="content-name">
+            <i>Pridobljeni naziv zaključene izobrazbe:</i>
+          </span>
+        </label>
+        
+   </div>
+
+   <div class="form frm13">
+    <input type="text" autocomplete="off" maxlength="40"/>
+    <label for="name" class="label-name">
+      <span class="content-name">
+        <i>Naziv in kraj šole, kjer ste dosegli zaključeno stopnjo izobrazbe:</i>
+      </span>
+    </label>
+    </div>
+
+   <div class="form frm14">
+        <input type="text" autocomplete="off" maxlength="40"/>
+        <label for="name" class="label-name">
+          <span class="content-name">
+            <i>Trenutno izobraževanje(šola, program):</i>
+          </span>
+        </label>
+        
+   </div>
+</div>
+
+<p id="p7">ŠPORTNI PODATKI</p>
+<div class="obrazec2">
+
+  <div class="form frm15">
+    <input type="text" autocomplete="off" id="spz" onclick="myFunction()" maxlength="3" pattern="[A-Za-z]+" required/>
+    <label for="name" class="label-name">
+      <span class="content-name" >
+        <i>Nacionalna panožna športna zveza:</i>
+      </span>
+    </label>
+    </div>
+
+   <div class="form frm16">
+        <input type="text" autocomplete="off" maxlength="20"required/>
+        <label for="name" class="label-name">
+          <span class="content-name">
+            <i>Športna panoga:</i>
+          </span>
+        </label>
+        
+   </div>
+
+        
+   
+  </div>
+
+   <div class="obrazec3">  
+    <p id="p8">Podpisan in s strani NPŠZ ožigosan obrazec pošljite na:<br>
+    Olimpijski komite Slovenije-Združenje športnih zvez, Odbor za vrhunski šport, Celovška 25, 1000 Ljubljana</p>  
+     </div>
+
+     <input type="submit" class="submit" id="submit_button"> 
+     
+    </div>
+<script>
+  var submit_button = document.getElementById("submit_button");
+
+fullForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    Swal.fire({
+        toast: true,
+        icon: 'success',
+        title: 'Obrazec oddan',
+        showConfirmButton: false,
+        timer: 2500,
+        position: 'top',
+        timerProgressBar: true,
+    }).then((result) => {
+        document.getElementById('fullForm').submit();
+    });
+});
+</script>
+</form>
+<script src="JS/javascript2.js"></script>
+
+</body>
+
+
+</html>

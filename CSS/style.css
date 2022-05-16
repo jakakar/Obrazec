@@ -1,0 +1,552 @@
+body{
+	background-image: url('../Slike/ozadje.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#glavni{
+    width: 1000px;
+    height: 1550px;
+	border: solid rgb(78, 159, 184);
+	border-width: 3px;
+    margin:auto;
+    overflow:auto;
+	box-sizing: border-box;
+	background-color: white;
+	
+	
+}
+.gla2{
+	width: 750px;
+    height: 210px;
+	border-width: 0px;
+    margin:auto;
+    overflow:auto;
+	box-sizing: border-box;
+    margin-top:40px;
+    background-image: url('../Slike/oliimp.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+#a{
+	width: 750px;
+    height: 110px;
+	border: solid black;
+	border-width: 2px;
+    margin:auto;
+    overflow:auto;
+	box-sizing: border-box;
+    margin-top:10px;
+
+}
+#p1{
+	font-size: 32px;
+	text-indent:100px;
+	line-height: 34px;
+	font-weight: bold;
+	
+}
+#p2{ 
+	font-size: 20px;
+    line-height: 40px;
+	font-weight: bold;
+}
+#p3{ 
+	font-size: 20px;
+    text-indent:225px;
+	font-weight: bold;
+	line-height: 40px;
+	word-spacing: 10px;
+}
+#p4{
+	font-size: 32px;
+	text-indent:15px;
+    font-weight: bold;
+	line-height: 35px;
+
+}
+#p5{
+	font-size: 20px;
+	text-indent:320px;
+    font-weight: bold;
+	line-height: 45px;
+
+}
+#p6{  /* osebni podatki nad div*/ 
+	font-size: 18px;
+    font-weight: bold;
+	text-indent: 140px;
+	margin-bottom: 0px;
+}
+#p6a{  /* pod. o izobrazbi nad div*/ 
+	font-size: 18px;
+    font-weight: bold;
+	text-indent: 140px;
+	margin-bottom: 0px;
+	
+}
+#p7{ 
+	font-size: 18px;
+    font-weight: bold;
+	text-indent: 140px;
+	margin-bottom: 0px;
+	
+}
+#p8{
+	font-size: 0.8em;
+    color: grey;
+	padding-top: 5px;
+}
+/* button animacija*/
+.container{/* div za postavitve obrazec*/
+	height: 50px;
+	width: 90%;
+	display: flex;
+	padding: 10px;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 30px;
+  }
+  .btn {
+	height: 60px;
+	width: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.8s ease;
+	position: relative;
+	border: 2px solid #111;
+	margin: 0 40px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+	  rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+.btn::before,
+.btn::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+}
+.btn2 {
+	border: none;
+	z-index: 10;
+  }
+  
+  .btn2 h4 {
+	z-index: 10;
+	color: #111;
+  }
+  
+  .btn2:after {
+	border: 2px solid #5fa8d3;
+	transition: all 800ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .btn2:before {
+	width: 0;
+	height: 0;
+	transition: all 500ms ease;
+  }
+  
+  .btn2:hover:after {
+	width: 0;
+	height: 0;
+	opacity: 0;
+  }
+  
+  .btn2:hover:before {
+	width: 100%;
+	height: 100%;
+	background-color: #5fa8d3;
+  }
+  
+  .btn2:hover h4 {
+	color: #fff;
+  }
+
+/* glavni div za osebni pod.*/
+.obrazec{
+   width: 46.9em;
+   height: 19.2em;
+   border: solid black 2px;
+   border-bottom: 0px;
+   margin: 0px 0px 0px 125px;
+   box-sizing: border-box;
+}
+
+.form{
+    width: 300px;
+    position: relative;
+    height: 55px;
+    overflow: hidden;
+	border-bottom: 0px solid black;
+	border-right:1px solid black;
+
+ }
+
+ .form1{
+	width: 150px;
+    height: 54px;
+    overflow: hidden;
+	border-bottom: 1px solid black;
+	border-right:1px solid black;
+}
+
+/* animacija na label*/
+.form input{
+	 width: 292px;
+	 height: 30px;
+	 color: #595f6e;
+	 padding-top: 20px;
+	 border: none;
+	 outline: none;
+	 
+ }
+ .form label{
+    position: absolute;
+	bottom: 0px;
+	left: 0%;
+    width: 100%;
+	height: 100%;
+	pointer-events: none;
+	border-bottom: 1px solid black;
+ }
+ .form label::after{
+	 content:"";
+	 position: absolute;
+	 left: 0px;
+	 bottom: -1px;
+	 height: 100%;
+	 width: 100%;
+	 border-bottom: 3px solid #5fa8d3;
+	 transform: translateX(-100%);
+	 transition: transform 0.3s ease;
+ }
+ .content-name{
+	 position: absolute;
+	 bottom: 5px;
+	 left: 0px;
+	 transition: all 0.3s ease;
+ }
+ .form input:focus + .label-name .content-name, 
+ form input:valid + .label-name .content-name{
+	 transform: translateY(-150%);
+	 font-size: 14px;
+	 color: #5fa8d3;
+ }
+ .form input:focus + .label-name::after, 
+ .form input:valid + .label-name::after{
+	 transform: translateX(0%);
+ }
+ 
+.form:hover{
+	color: #5fa8d3;
+}
+.form1:hover{
+	color: #5fa8d3;
+}
+
+/*osebni podatki notranji divi */
+
+.radio-group{
+	border:1px solid black;
+	height:54px;
+	width:142px;
+    float:right;
+    border-top: 0px;
+    border-right: 0px;
+	
+}
+
+.frm{
+	float: left;
+	
+}
+.frm1{
+	border-left:1px solid black;
+	float:left;
+}
+.frm2{
+	border-right:2px solid black;
+	float:left;
+	width: 175px;
+}
+.frm3{
+	float: left;
+	border-right: 2px solid black;
+}
+.frm4{
+	float: right;
+	width:267px;
+	border-right: 0px;
+}
+.frm5{
+	float: left;
+	width: 371.5px;
+	height: 45px;
+	border-right: 2px solid black;
+	line-height: 12px;
+}
+.frm6{
+	float: right;
+    width: 372.5px;
+	height: 45px;
+	border-right: 0px;
+	line-height: 12px;
+}
+.frm7{
+	float: right;
+    width: 746px;
+	border-right: 0px;
+}
+.frm8{
+	float: left;
+    width: 371.5px;
+	height: 45px;
+	border-right: 2px solid black;
+	line-height: 12px;
+}
+.frm9{
+	float: right;
+    width: 372.5px;
+	height: 45px;
+	border-right: 0px;
+	line-height: 12px;
+}
+.frm10{
+	height: 49px;
+	float:left;
+	width: 746px;
+	border-bottom: 1px solid black;
+}
+/* classi za js da vpisuje samo st.*/
+.emso{
+	letter-spacing: 1.1em;
+	
+}
+.davcna-st{
+	letter-spacing: 1.1em;
+}
+.telefon{
+	letter-spacing: 1.2em;
+}
+
+/* radio-group za spol*/
+@keyframes click-wave {
+	0% {
+	  height: 20px;
+	  width: 20px;
+	  opacity: 0.35;
+	  position: relative;
+	}
+	100% {
+	  height: 200px;
+	  width: 200px;
+	  margin-left: -80px;
+	  margin-top: -80px;
+	  opacity: 0;
+	}
+  }
+  
+  .opt1{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	position: relative;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	transition: all 0.15s ease-out 0s;
+	background: #cbd1d8;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	margin-right: 0.5rem;
+	margin-top: 20px;
+	outline: none;
+	position: relative;
+	z-index: 1000;
+  }
+  .opt2{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	position: relative;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	transition: all 0.15s ease-out 0s;
+	background: #cbd1d8;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	
+	margin-right: 0.5rem;
+	outline: none;
+	position: relative;
+	z-index: 1000;
+  }
+  .option-input:hover {
+	background: #9faab7;
+  }
+  .option-input:checked {
+	background: #5fa8d3;
+  }
+  .option-input:checked::before {
+	height: 15px;
+	width: 15px;
+	position: absolute;
+	content: '✔';
+
+	font-size: 26.66667px;
+	text-align: center;
+	line-height: 20px;
+  }
+  .option-input:checked::after {
+	-webkit-animation: click-wave 0.65s;
+	-moz-animation: click-wave 0.65s;
+	animation: click-wave 0.65s;
+	background: #5fa8d3;
+	content: '';
+	display: block;
+	position: relative;
+	z-index: 100;
+  }
+  .option-input.radio {
+	border-radius: 50%;
+  }
+  .option-input.radio::after {
+	border-radius: 50%;
+  }
+
+
+  /*glavni div pod. o izobrazbi*/
+  .obrazec1{
+	width: 46.9em;
+	height: 218px;
+	border: solid black 2px;
+	margin: 0px 0px 0px 125px;
+	opacity: 0.4;
+	pointer-events: none;
+ }
+ .obr{
+	opacity: 0.4;
+ }
+
+.frm11{
+	height: 55px;
+	width: 750px;
+	float: left;
+	border: #5fa8d3;
+	
+}
+.frm12{
+	height: 55px;
+	width: 750px;
+	float:left;
+	border: #5fa8d3;
+}
+.frm13{
+	height: 55px;
+	width: 750px;
+	float:left;
+	border: #5fa8d3;
+}
+.frm14{
+	height: 54px;
+	width: 750px;
+	float:left;
+	border: #5fa8d3;
+}
+/* glavni div za sportni podatki*/
+.obrazec2{
+	width: 46.9em;
+	height: 6.85em;
+	border: solid black 2px;
+	margin: 0px 0px 0px 125px;
+ }
+
+
+ /* sportni podatki*/
+ .frm15{
+	height: 55px;
+	width: 750px;
+	float:left;
+}
+.frm16{
+	height: 56px;
+	width: 750px;
+	float:left;
+	
+}
+
+.obrazec3{
+	width: 730px;
+	height: 0px;
+	border-bottom: solid grey 1px;
+	margin: 30px 0px 0px 125px;
+	margin-left: 140px;
+ }
+/* poslji button*/
+ .submit{
+	margin: 60px 0px 0px 450px; 
+	height: 30px;
+	width: 75px;
+ }
+
+
+ /*datum v osebnih pod. */
+ .datum{
+	 background-color: white;
+	 outline: none;
+	 border: none;
+	 border-bottom: 2px solid #5fa8d3;
+	 font-size: 1.2em;
+	 height: 30px;
+	 width: 170px;
+	 margin-left: 2px;
+ }
+ ::-webkit-calendar-picker-indicator{
+	 background-color: white;
+	 color: #5fa8d3;
+	 padding-right: 12px;
+	 
+ }
+
+.datum:hover{
+	color:#5fa8d3;
+}
+input[type="date"]:valid {
+	color: #5fa8d3;
+	font-family: sans-serif;
+	font-size: 15.5px;
+  }
+  
+#slt-1{
+	margin-right: 1000px;
+	margin-top: 8px;
+}
+.tmp{
+	color: #5fa8d3;
+}
+#tmp2{
+	
+	border-bottom: 3px solid #5fa8d3;
+}
+
+input{
+	font-size: 15px;
+}
+
